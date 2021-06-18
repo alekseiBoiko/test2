@@ -1,0 +1,12 @@
+#header{
+    height: 100px;
+    padding-left: $padding-hor;
+    display: flex;
+    align-items: center;
+
+    a{
+        &:hover{
+            opacity: 0.8;
+        }
+    }    
+}

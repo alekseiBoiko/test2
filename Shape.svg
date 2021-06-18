@@ -1,0 +1,17 @@
+<svg id="Shape" xmlns="http://www.w3.org/2000/svg" width="34" height="37" viewBox="0 0 34 37">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2d3950;
+      }
+
+      .cls-2 {
+        fill: #15a4fa;
+      }
+    </style>
+  </defs>
+  <rect id="Black_bottom" data-name="Black bottom" class="cls-1" y="19" width="15" height="15"/>
+  <rect id="Black" class="cls-1" x="19" y="3" width="15" height="15"/>
+  <rect id="Blue_Bottom" data-name="Blue Bottom" class="cls-2" x="19" y="22" width="15" height="15"/>
+  <rect id="Blue_Top" data-name="Blue Top" class="cls-2" width="15" height="15"/>
+</svg>

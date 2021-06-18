@@ -1,0 +1,19 @@
+$background:#f6f9f9;
+$font-color:#999999;
+$padding: 4% 17%;
+$padding-hor: 17%;
+$padding-ver: 4%;
+$blue: #15a4fa;
+
+$screen-sizes: ("xs":320px, "sm":720px, "md":840px, "lg":992px, "xl":1110px);
+
+
+@mixin media($minmax, $media) {
+    @each $size, $resolution in $screen-sizes {
+        @if $media == $size {
+            @media only screen and (#{$minmax}-width: $resolution) {
+                @content;
+            }
+        }
+    }
+}
