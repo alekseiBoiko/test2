@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Части страницы:
 header (h=100px logo)
 banner (h=800px name (h1=90px) white, line(blue),slogan  15 px white)
@@ -15,4 +16,23 @@ header - стили гшапки
 footer - стили футера
 socialmeadia - стили социальных иконок
 sections - стили для секций страницы
+=======
+Части страницы:
+header (h=100px logo)
+banner (h=800px name (h1=90px) white, line(blue),slogan  15 px white)
+simple (h=397px h2=30px black, text=15px gray)
+features (h=340 px 3 icon (hover), h3 15 px bold black, 12 px gray ) ffffff
+showcase (h=900px h2=30px black,  12 px gray, grid 3*2 360*260px)
+Stay  (h=700 px h2=30px white, 12 px, background)
+footer (h=90 px 12 px, 4 иконки соцсетей)
+
+normalize- наши обнуления
+varuables - размеры шрифтов, цвета, отступы
+typography - основные стили для заголовков, текста, ссылок
+forms - стили кнопок и инпутов
+header - стили гшапки
+footer - стили футера
+socialmeadia - стили социальных иконок
+sections - стили для секций страницы
+>>>>>>> master
 all - файл в который все подключается и он компилируетсся в цсс

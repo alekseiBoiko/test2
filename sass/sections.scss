@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .banner {
     height: 50vw;
     background-image: url(../images/Banner1.png);
@@ -236,4 +237,244 @@
             }      
         }
     }    
+=======
+.banner {
+    height: 50vw;
+    background-image: url(../images/Banner1.png);
+    background-size: cover;
+    padding: 10% $padding-hor 10%;
+    font-size: 1.25em;
+    display: flex;    
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    
+    .banner-text {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 1em;
+    
+        hr {
+            border:none;
+            height: 3px;
+            background-color: $blue;
+        }     
+    }
+} 
+.simple{
+    padding: $padding;
+    text-align:center;
+
+        h2{
+            color: #2d3950;
+        }
+        .simple-text{
+            font-size: 1.25em;
+        }
+}   
+.features{
+    background-color: white;
+    padding: $padding;
+        
+    .features-list{
+        display: flex;    
+        justify-content:space-evenly;
+        align-items:flex-start;
+        gap:1em;
+        flex-wrap: wrap;
+        
+        display: -ms-flex;
+        -ms-flex-pack:center;
+        -ms-flex-align:flex-start;
+                        
+        .features-item{
+            width: 300px;
+            display: flex; 
+            flex-direction: column;
+            justify-content:space-between;
+            align-items:center;
+            text-align: center;
+            margin-top: 2em;
+            
+            display: -ms-flex;
+            -ms-flex-align:flex-start;
+
+            i{
+                height: 100px;
+                width: 100px;
+                line-height: 100px;
+                background: linear-gradient(90deg, #48baff 50%, $blue 50%);
+                                
+                &:hover{
+                    background: linear-gradient(90deg, $blue 50%, #48baff 50%);
+                }
+            }
+            .features-text{
+                width: 100%;
+            }
+        }        
+    }
+}
+.showcase{
+    padding: $padding;
+    text-align: center;
+    h2{
+        color: #2d3950;
+    } 
+    .images-list{
+        padding-top: $padding-ver;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -10px;
+
+        display: -ms-flex;
+        
+        
+        .image-item{
+            position: relative;
+            margin: 10px 10px;
+            max-width: 30%;
+            
+            @include media("max", "lg") {
+                max-width: 45%;
+            }
+        
+            .overlay{
+                opacity: 0;
+                background-color: $blue;
+                height: 100%;
+                width:100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                
+                i{
+                border-style: solid;
+                border-color: #ffffff;
+                border-radius: 5%;
+                border-width: 1px;
+                width: 42px;
+                height: 42px;
+                line-height: 42px;
+                
+                    &:hover{
+                    background-color: #ffffff;
+                    color: $blue;
+                    }
+                }
+            }
+            
+            &:hover{
+                
+                .overlay{
+                    opacity: 0.9;
+                }
+            }
+        }
+    } 
+}
+.feedback{
+    background-image: url(../images/Banner2.png);
+    position: relative;
+    padding: $padding;
+        
+    &::before{
+        content: "";
+        background: rgba(45,57,79, 0.7) ;
+        height: 100%;
+        width:100%;
+        position: absolute;
+        top: 0;
+        left: 0; 
+    }
+    .feedback-contain{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;
+        width: 33vw;
+        @include media("max", "sm") {
+            width: 50vw;
+        }
+    
+        h2{
+            color: white;
+        }    
+        p{
+            text-align: center;
+        }   
+        .form-input, .form-textarea {
+            border: 1px solid;
+            border-radius: 3px;
+            padding: 1em;
+            margin-top: 20px;
+                        
+            &:hover{
+                border-color: #ffffff;
+            }
+        }
+               
+        .form-textarea{
+            height: 11em;
+        }
+
+        .sending{
+            margin: 20px auto;
+            display:flex;
+            justify-content: space-between;
+
+            .custom-checkbox {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                    &:checked+label::before {
+                    border-color: $blue;
+                    background-color: $blue;
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+                    }
+            }
+            .custom-label{
+                display: inline-flex;
+                align-items: center;
+                user-select: none;
+                color: #ffffff;
+    
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 1em;
+                    height: 1em;
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                    border: 1px solid #adb5bd;
+                    border-radius: 0.25em;
+                    margin-right: 0.5em;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 50% 50%;
+                    background-color: #9ba1ab;
+                }
+            }    
+            .form-button{
+                    background:none;
+                    border: 1px solid $blue;
+                    border-radius: 3px;
+                    color: #ffffff;
+                    width: 25%;
+                    line-height: 3em;
+                    text-align: center;
+                    vertical-align: middle;
+
+                    &:hover{
+                        background-color: $blue;
+                    }
+            }      
+        }
+    }    
+>>>>>>> master
 }
